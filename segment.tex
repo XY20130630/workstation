@@ -1,5 +1,6 @@
 \documentclass[a4paper]{article}
 \usepackage{ctex}
+\usepackage{xeCJK}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -12,6 +13,9 @@
 \usepackage[affil-it]{authblk}
 \usepackage[top = 1.0in, bottom = 1.0in, left = 1.0in, right = 1.0in]{geometry}
 \usepackage{amsthm}
+
+\setCJKfamilyfont{kai}{KaiTi_GB2312}
+\newcommand{\kai}{\CJKfamily{kai}}                            
 
 \newcommand\spc{\vspace{6pt}}
 \newcommand{\floor}[1]{\lfloor {#1} \rfloor}
@@ -30,25 +34,64 @@
 
 \maketitle
 
-\section{按位置建线段树的基础应用}
+\kai
 
-\subsection{一类难点在区间合并与维护信息的线段树问题}
+\tableofcontents
 
-\subsubsection{从简单情况开始分析}
+\newpage
 
-\subsubsection{分析题目性质}
+\section{\kai{按位置建线段树的基础应用}}
 
-\subsection{一类难点在处理标记的线段树问题}
+有一些典型的数据结构题，即给出几种操作，动态询问区间的某些信息。下面我总结了几类按位置建线段树能够解决的难题。
 
-\subsubsection{从全局出发，一种“操作log次就不再有效”的问题}
+\subsection{\kai{一类难点在区间合并与维护信息的线段树问题}}
 
-\subsubsection{李超线段树}
+有一类问题，初看到问题会无从下手，往往操作十分简单，但是询问的内容比较复杂。
 
-\subsubsection{区间最值操作与历史最值询问}
+\subsubsection{\kai{从简单情况开始分析}}
 
-\section{权值线段树的基础应用}
+\subsubsection{\kai{分析题目性质}}
 
-\subsection{部分代替平衡树}
+\subsection{\kai{一类难点在处理标记的线段树问题}}
 
+\subsubsection{\kai{从全局出发，一种“操作log次就不再有效”的问题}}
+
+\subsubsection{\kai{李超线段树}}
+
+\subsubsection{\kai{区间最值操作与历史最值询问}}
+
+\section{\kai{权值线段树的基础应用}}
+
+\subsection{\kai{部分代替平衡树}}
+
+\section{\kai{可持久化线段树的基础应用}}
+
+\subsection{\kai{一类关于子序列的问题}}
+
+\subsection{\kai{一类维护序列中某个区间信息的问题}}
+
+\section{\kai{动态开点线段树的基础应用}}
+
+\section{\kai{线段树合并的基础应用}}
+
+\subsection{\kai{一类考虑子树对父亲的贡献的问题}}
+
+\subsection{\kai{一类有关图的最短路的问题}}
+
+\section{\kai{线段树套线段树的基础应用}}
+
+\section{\kai{线段树作为辅助数据结构的一些问题}}
+
+\subsection{\kai{用线段树优化dp}}
+
+\subsection{\kai{用线段树判断完美匹配}}
+
+\subsection{\kai{用线段树模拟费用流}}
+
+\section{\kai{线段树问题的一些小技巧}}
+
+\subsection{\kai{差分}}
+
+\subsection{\kai{下标有关}}
 
 \end{document}
